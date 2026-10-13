@@ -2,174 +2,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Education</title>
 
-  <title>Trading Education</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background: #080f1e;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #07111f, #142b42);
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
+.container {
+  width: 100%;
+  max-width: 650px;
+  background: linear-gradient(145deg, #14243b, #0c1729);
+  border: 1px solid #2c4565;
+  border-radius: 18px;
+  padding: 35px 22px;
+  text-align: center;
+  box-shadow: 0 10px 35px #00000055;
+}
 
-    .container {
-      width: 100%;
-      max-width: 650px;
-      text-align: center;
-      padding: 35px 22px;
-      border-radius: 16px;
-      background: #101d2e;
-      border: 1px solid #29415c;
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
-    }
+h1 {
+  font-size: 30px;
+  line-height: 1.4;
+  margin-bottom: 22px;
+}
 
-    h1 {
-      color: #ffffff;
-      font-size: 30px;
-      line-height: 1.4;
-      margin-bottom: 24px;
-    }
+.highlight {
+  color: #facc15;
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
 
-    .opportunity {
-      color: #facc15;
-      font-size: 21px;
-      font-weight: bold;
-      margin-bottom: 25px;
-    }
+.features {
+  background: #1c3049;
+  border-radius: 12px;
+  padding: 20px 12px;
+  margin: 20px 0;
+}
 
-    .features {
-      background: #192b40;
-      padding: 22px 12px;
-      border-radius: 10px;
-      margin-bottom: 25px;
-    }
+.features p {
+  color: #4ade80;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 2.1;
+}
 
-    .features p {
-      color: #4ade80;
-      font-size: 18px;
-      font-weight: bold;
-      line-height: 2;
-    }
+.timer-title {
+  font-size: 18px;
+  margin: 25px 0 15px;
+}
 
-    .timer-title {
-      font-size: 18px;
-      margin: 25px 0 15px;
-      color: #e2e8f0;
-    }
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 
-    .timer {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
+.timer-box {
+  min-width: 75px;
+  background: #243b56;
+  padding: 13px 10px;
+  border-radius: 8px;
+}
 
-    .timer-box {
-      background: #263b53;
-      padding: 14px 10px;
-      border-radius: 8px;
-      min-width: 85px;
-    }
+.timer-box strong {
+  display: block;
+  color: #facc15;
+  font-size: 24px;
+}
 
-    .timer-box strong {
-      display: block;
-      font-size: 25px;
-      color: #facc15;
-    }
+.timer-box span {
+  font-size: 11px;
+  color: #cbd5e1;
+}
 
-    .timer-box span {
-      display: block;
-      font-size: 12px;
-      margin-top: 5px;
-      color: #cbd5e1;
-    }
+.disclaimer {
+  border-top: 1px solid #34465c;
+  margin-top: 28px;
+  padding-top: 20px;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
 
-    .disclaimer {
-      font-size: 13px;
-      line-height: 1.7;
-      color: #cbd5e1;
-      margin-top: 30px;
-      border-top: 1px solid #34465a;
-      padding-top: 20px;
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 25px;
-      }
-
-      .opportunity {
-        font-size: 18px;
-      }
-
-      .features p {
-        font-size: 16px;
-      }
-
-      .timer-box {
-        min-width: 65px;
-      }
-    }
-  </style>
+@media (max-width: 480px) {
+  h1 { font-size: 25px; }
+  .highlight { font-size: 18px; }
+  .features p { font-size: 15px; }
+  .timer-box { min-width: 65px; }
+}
+</style>
 </head>
 
 <body>
-  <main class="container">
+<main class="container">
 
-    <h1>India's Best And Most Demanding Channel</h1>
+  <h1>India's Best And Most Demanding Channel</h1>
 
-    <p class="opportunity">
-      DON'T MISS THIS OPPORTUNITY
-    </p>
+  <p class="highlight">DON'T MISS THIS OPPORTUNITY</p>
 
-    <section class="features">
-      <p>✓ PROPER RISK MANAGEMENT</p>
-      <p>✓ DAILY 3-4 FREE CALLS</p>
-    </section>
+  <section class="features">
+    <p>✓ PROPER RISK MANAGEMENT</p>
+    <p>✓ DAILY 3-4 FREE CALLS</p>
+  </section>
 
-    <p class="timer-title">Stay Updated</p>
+  <p class="timer-title">Trading Education</p>
 
-    <div class="timer">
-      <div class="timer-box">
-        <strong>00</strong>
-        <span>DAYS</span>
-      </div>
-
-      <div class="timer-box">
-        <strong>00</strong>
-        <span>HOURS</span>
-      </div>
-
-      <div class="timer-box">
-        <strong>00</strong>
-        <span>MINUTES</span>
-      </div>
-
-      <div class="timer-box">
-        <strong>00</strong>
-        <span>SECONDS</span>
-      </div>
+  <div class="timer">
+    <div class="timer-box">
+      <strong>00</strong>
+      <span>DAYS</span>
     </div>
+    <div class="timer-box">
+      <strong>00</strong>
+      <span>HOURS</span>
+    </div>
+    <div class="timer-box">
+      <strong>00</strong>
+      <span>MINUTES</span>
+    </div>
+    <div class="timer-box">
+      <strong>00</strong>
+      <span>SECONDS</span>
+    </div>
+  </div>
 
-    <p class="disclaimer">
-      Investments are subject to market risks.
-      Please understand the risks before making
-      any investment decisions.
-    </p>
+  <p class="disclaimer">
+    Trading involves financial risk. Market movements
+    are unpredictable. No profits or returns are guaranteed.
+    Make informed financial decisions.
+  </p>
 
-  </main>
+</main>
 </body>
 </html>
