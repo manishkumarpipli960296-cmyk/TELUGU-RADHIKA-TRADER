@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,8 +52,28 @@ header {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 800;
   font-size: 17px;
+  min-width: 0;
+}
+
+.logo img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--green);
+  flex-shrink: 0;
+}
+
+.logo-text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
 }
 
 .logo span {
@@ -66,6 +86,7 @@ header {
   border: 1px solid #285b4d;
   border-radius: 30px;
   padding: 5px 9px;
+  white-space: nowrap;
 }
 
 .hero {
@@ -236,6 +257,55 @@ footer {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+@media (max-width: 420px) {
+  .container {
+    width: 92%;
+  }
+
+  header {
+    padding: 12px 0;
+  }
+
+  .nav {
+    gap: 6px;
+  }
+
+  .logo {
+    gap: 7px;
+    font-size: 12px;
+  }
+
+  .logo img {
+    width: 43px;
+    height: 43px;
+  }
+
+  .logo-text {
+    display: block;
+  }
+
+  .logo span {
+    display: block;
+  }
+
+  .tag {
+    font-size: 8px;
+    padding: 4px 6px;
+  }
+
+  .hero {
+    padding-top: 35px;
+  }
+
+  .grid {
+    gap: 9px;
+  }
+
+  .card {
+    padding: 13px 10px;
+  }
+}
 </style>
 </head>
 
@@ -243,10 +313,24 @@ footer {
 
 <header>
   <div class="container nav">
+
     <div class="logo">
-      MOHIT <span>AGGARWAL TRADER</span>
+
+      <!-- MOHIT TRADER IMAGE ADDED HERE -->
+
+      <img
+        src="mohit%20trader.png"
+        alt="Mohit Aggarwal Trader"
+        onerror="this.style.display='none'">
+
+      <div class="logo-text">
+        MOHIT <span>AGGARWAL TRADER</span>
+      </div>
+
     </div>
+
     <div class="tag">TRADING EDUCATION</div>
+
   </div>
 </header>
 
@@ -272,6 +356,7 @@ footer {
     <!-- Illustrative chart -->
 
     <div class="chart">
+
       <div class="chart-top">
         <span>MARKET EDUCATION</span>
         <span>Illustrative chart</span>
@@ -296,6 +381,7 @@ footer {
           stroke-linejoin="round"/>
 
         <circle cx="315" cy="12" r="4" fill="#39e6a1"/>
+
       </svg>
     </div>
 
@@ -376,13 +462,16 @@ footer {
     </div>
 
     <div class="disclaimer">
+
       <strong>Risk Disclaimer:</strong>
+
       Trading in financial markets involves risk and can result
       in financial losses. This page is for educational purposes
       only and does not constitute investment advice or a
       recommendation to buy or sell financial instruments.
       No profit or return is guaranteed. Please make informed
       decisions and seek qualified professional advice if needed.
+
     </div>
 
   </section>
@@ -398,3 +487,4 @@ footer {
 
 </body>
 </html>
+```
